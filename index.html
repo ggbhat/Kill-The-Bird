@@ -1,0 +1,45 @@
+<!doctype html>
+<title>Save the bird</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/kill.js"></script>
+  </script>
+</head>
+<body>
+	<div class="fixed">
+    <div class="countdown">60</div>
+ <!--    <div id="mute">
+  <button class="m">Mute</button>
+</div>
+<div id="play">
+  <button class="p">Play</button>
+</div> -->
+<audio id="player" src="/sounds/ow.mp3" autoplay loop></audio>
+
+    <div class="total"><label>total</label><div class="sc"></div></div>
+    <div class="total"><label>left</label><div class="lsc"></div></div>
+  </div>
+  <div class="outer"></div>
+  <div class="overlay" id="overlay" style="display:none;">
+   <div class="box" id="box">
+    <h2></h2>
+    <a href="#" class="tr">Try Agian</a>
+  </div>
+</div>
+
+<!-- <img src="loading.gif" id="loader">
+ -->
+<script>
+// $(window).load(function() {
+//       // Animate loader off screen
+//       $("#loader").animate({
+//         top:-200,
+//         opacity:0
+//       }, 1500);
+
+//     });
+$("body").on("touchmove", false);
+</script>
+</body>
+</html>
